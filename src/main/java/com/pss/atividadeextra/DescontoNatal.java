@@ -14,8 +14,7 @@ import java.time.Year;
  */
 public class DescontoNatal extends Chain{
     private IChain next;
-    private final int year=Year.now().getValue();
-    private LocalDateTime Natal =LocalDateTime.of(year, Month.DECEMBER, 25, 0, 0);
+    private LocalDateTime Natal =LocalDateTime.of(Year.now().getValue(), Month.DECEMBER, 25, 0, 0);
     
     @Override
     public void setNext(IChain next){
