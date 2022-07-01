@@ -12,7 +12,7 @@ import java.util.ArrayList;
  * @author Sylvio
  */
 public class ItemCollection {
-    private ArrayList<Item> Itens;
+    private final ArrayList<Item> Itens;
      public ItemCollection(){
        Itens = new ArrayList<>();
    }
@@ -29,12 +29,8 @@ public class ItemCollection {
    }
     public Item geti(int index){
     
-//       if (item != null) {
            return Itens.get(index);
-//                   }
-//       else{
-//           throw new RuntimeException("Inválido");
-//       }   
+
    }
     public int getsize(){
         return Itens.size();
