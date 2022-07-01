@@ -11,10 +11,10 @@ package com.pss.atividadeextra;
  */
 public abstract class Chain implements IChain{
     private IChain next;
-    @Override
-    public void setNext(IChain next){
-        this.next=next;
-    }
+//    @Override
+//    public void setNext(IChain next){
+//        this.next=next;
+//    }
     @Override
     public IChain getNext(){
         return next;

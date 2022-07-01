@@ -34,7 +34,6 @@ public class DescontoPapelaria extends Chain{
           }
         }
           pedido.addPCDesconto(aux);
-            System.out.println("" +pedido.getPCDesconto());
           this.next.handle(pedido);
      if(isFim(this)==true)return;
     
