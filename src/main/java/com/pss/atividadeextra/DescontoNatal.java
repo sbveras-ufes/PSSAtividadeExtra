@@ -6,6 +6,7 @@
 package com.pss.atividadeextra;
 import java.time.LocalDateTime;
 import java.time.Month;
+import java.time.Year;
 
 /**
  *
@@ -13,7 +14,8 @@ import java.time.Month;
  */
 public class DescontoNatal extends Chain{
     private IChain next;
-    private LocalDateTime Natal =LocalDateTime.of(0, Month.DECEMBER, 25, 0, 0);
+    private final int year=Year.now().getValue();
+    private LocalDateTime Natal =LocalDateTime.of(year, Month.DECEMBER, 25, 0, 0);
     
     @Override
     public void setNext(IChain next){
